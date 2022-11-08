@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Open+Sans:wght@300;400;500&family=Parisienne&family=Playfair+Display:wght@400;500;600&display=swap');
+
+:root {
+    --light: #fdeae6;
+    --medium: #cb997e
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100vw;
+    padding-top: 70px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: none;
+}
+
+nav {
+    margin-top: -70px;
+    width: 100%;
+    height: 70px;
+    background-color: var(--light);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    position: fixed;
+    box-shadow: 0 0 10px;
+}
+
+nav>img {
+    width: 30px;
+    height: 30px;
+}
+
+header {
+    width: 100%;
+    padding-inline: 15px;
+    color: white;
+}
+
+header>.pictures {
+    background-image: url(img/Bela\ Vista\ Geriba-29.jpg);
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    height: 450px;
+    padding: 40px;
+}
+
+header>.pictures>.wrapper-pictures>h1 {
+    text-align: right;
+    font-size: 40px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+header>.pictures>.wrapper-pictures>p {
+    font-size: 20px;
+}
+
+header>.pictures>.wrapper-pictures>a>button {
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+header>.pictures>.wrapper-pictures>a>button:hover {
+    background-color: rgb(54, 54, 54);
+    border: none;
+    cursor: pointer;
+}
+
+header>.dates {
+    width: 85%;
+    background-color: var(--light);
+    display: flex;
+    flex-direction: column;
+    margin-top: -40px;
+    margin-right: 20px;
+    margin-left: auto;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+header>.dates>h1 {
+    color: black;
+    font-family: 'Parisienne', cursive;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+header>.dates>input {
+    width: 80%;
+    height: 35px;
+    text-align: center;
+    border: 2px solid var(--medium);
+    margin-top: 15px;
+}
+
+header>.dates > a {
+    width: 80%;
+}
+
+header>.dates> a > button {
+    width: 100%;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px;
+    background-color: var(--medium);
+    margin-top: 15px;
+    margin-bottom: -10px;
+    border: none;
+}
+
+header>.dates>a>button:hover {
+    background-color: rgb(54, 54, 54);
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-inline: 15px;
+    margin-top: 70px;
+}
+
+main>a {
+    color: white;
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+    background-color: rgba(50, 50, 50, 0.5);
+    background-blend-mode: darken;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main>a:hover {
+    background-color: rgba(70, 70, 70, 0.2);
+    cursor: pointer;
+}
+
+main>.about {
+    background-image: url(img/Bela\ Vista\ Geriba-21.jpg);
+}
+
+main>.breakfast {
+    background-image: url(img/Bela\ Vista\ Geriba-60.jpg);
+}
+
+main>.rooms {
+    background-image: url(img/Bela\ Vista\ Geriba-30.jpg);
+}
+
+main>.contact {
+    background-image: url(img/Bela\ Vista\ Geriba-53.jpg);
+}
+
+main>.discover {
+    background-image: url(img/Bela\ Vista\ Geriba-58.jpg);
+}
+
+/* main > .reviews {
+} */
+
+main>.instagram>label {
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+}
+
+main>.instagram>label>a {
+    text-align: center;
+    font-weight: 700;
+    padding-top: 4px;
+    padding-left: 5px;
+    color: var(--medium);
+}
+
+main>.instagram>label>a:hover {
+    color: rgba(70, 70, 70);
+    cursor: pointer;
+}
+
+main>.instagram>.insta-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+main>.instagram>.insta-wrapper>img {
+    width: 100%;
+}
+
+.cantact-input {
+    margin-top: 50px;
+    background-color: var(--light);
+    text-align: center;
+    padding: 15px;
+}
+
+.cantact-input>a>button {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+    background-color: var(--medium);
+    color: white;
+}
+
+.cantact-input>a>button:hover {
+    background-color: rgb(54, 54, 54);
+    cursor: pointer;
+}
+
+.cantact-input>h2 {
+    margin-top: 20px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 300;
+}
+
+.cantact-input>p{
+    margin-top: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(54, 54, 54);
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    padding-inline: 30px;
+    text-align: center;
+}
+
+footer>h1 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+footer>.wrapper-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+footer>.wrapper-icons>a {
+    padding-inline: 20px;
+}
+
+footer>.wrapper-icons path {
+    stroke: white;
+}
+
+footer a {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    padding: 5px;
+}
+
+footer a:hover {
+    cursor: pointer;
+}
+
+footer>a>button {
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+footer>a>button:hover {
+    cursor: pointer;
+}
+
+footer>p {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 300;
+}
